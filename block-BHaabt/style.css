@@ -51,10 +51,18 @@ table {
 .heading{
     font-family:  'DM Serif Display', serif;
 }
+.text{
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    line-height: 1.6;
+}
 .flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.algn-item{
+    align-items: flex-start;
 }
 .btn{
     padding: 10px 16px;
@@ -63,16 +71,23 @@ table {
     border-radius: 4px; 
     border: 1px solid gray;
     display: inline-block;
-    font-size: 18px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
 }
 .col{
-    flex:0 1 5  0%;
-    width: 46%;
+    flex: 0 1 48%;
 }
-.text{
-    color: #fff;
-    font-size: 20px;
-    margin: 30px 0;
+.padding{
+    padding: 80px 0;
+}
+.heading-2{
+    font-size: 48px;
+    
+    color: #2d2648;
+}
+.img-100{
+    width: 100%;
 }
 body{
     font-family: 'Karla', sans-serif;
@@ -81,15 +96,18 @@ body{
 }
 header{
     padding: 16px 0;
+    background-color: #fff;
 }
 .container{
     max-width: 1350px;
     margin: 0 auto;
-    padding: 0 0;
+    padding: 0 32px ;
 }
 .logo h1{
     font-size: 36px;
     color: black;
+    font-weight: 600;
+    font-family: "DM Serif Sisplay" , Serif;
 }
 .logo{
     text-decoration: none;
@@ -104,130 +122,108 @@ header{
 }
 /* hero */
 .hero{
-    background-color: rgb(53, 34, 63);
-    padding:60px 0;
-}
-.hero h1{
-    font-size: 80px;
+    background-color: #2d2640;
+    padding: 60px 0;
     color: white;
 }
-.hero .col-right{
-    position: relative;
-    height: 500px;
+.line{
+    width: 200px;
+    height: 2px;
+    background-color: rgb(170, 166, 166);
 }
-.hero .col-right img{
-    width: 100%;
-    position: absolute;
-    top:45px;
-    right: 10px;
-}
-.hr-small{
-    width: 30%;
-}
-/* section-1 */
-.section-1{
-    padding-top: 230px;
-    padding-bottom: 50px;
-}
-.section-1 h1{
+.hero-heading{
     font-size: 50px;
-    margin-bottom: 20px;
+    margin-top: 16px;
+    font-family:  'DM Serif Display', serif;
+    line-height: 1.3;
 }
-.section-1 .section-1-text{
+.hero-text{
+    color:rgb(170, 166, 166);
+    margin-bottom: 32px;
+}
+.btn-secondory{
+    border-color: white;
+    color: #fff;
+    font-size: 18px;
+}
+.hero-img{
+    width: 100%;
+    margin-bottom: -160px;
+}
+/* about section */
+.about{
+    margin-top: 80px ;
+}
+.about p{
+    line-height: 1.6;
     color: gray;
+    margin:24px 0
 }
-.section-1 .btn{
-    padding:15px 20px;
-    font-size: 20px;
+/*  features*/
+.feature header{
+    margin-bottom: 40px;
+}
+.col-1-3{
+    flex: 0 1 30%;
+}
+.icon-box{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #8ab4f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature h3{
+    font-size: 25px;
+    color:#2d2640 ;
+    margin:24px 0 8px 0;
     font-weight: 600;
 }
-.section-1 img{
-    width: 100%;
-    object-fit: cover;
-    -o-object-fit: cover;
-}
-/* blog */
-.section-2{
-    padding:60px 0;
-}
-.section-2 .col-2-1{
-    flex: 0 1 29%;
-}
-.section-2 h1{
-    font-size: 50px;
-    margin: 20px 0;
-}
-.section-2 h3{
-    font-size: 30px;
-    margin: 5px 0;
-}
-.section-2 .text{
+.feature p{
     color: gray;
-    font-size: 20px;
-    margin: 10px 0;
 }
-.section-2 i{
-    padding: 10px;
-    background-color: rgb(157, 197, 236);
-    border-radius: 50%;
-    font-size: 20px;
+/* Cta */
+.cta .container{
+    background-color: #2d2640;
+    padding: 80px 60px;
 }
-.hr-small-2{
-    width: 15%;
-}
-/* section-3 */
-.section-3 .container{
-    background-color:  rgb(53, 34, 63);
-    box-sizing: border-box;
-    padding: 60px 32px;
-}
-.section-3 h1{
-    font-size: 50px;
-    color: #fff;
-}
-.section-3 .btn{
-    color: #fff;
-    display: inline-block;
+.cta{
+    color: white;
 
 }
+.cta h3{
+    font-size: 44px;
+}
+
 /* footer */
 .footer{
-    padding: 50px 0;
-    text-align: center;
+    margin-top: 60px;
 }
 .footer .container{
     padding: 0;
 }
+.social{
+    border-bottom: 1px solid gray;
+}
 .footer h2{
     font-size: 36px;
-    margin-bottom: 10px;
 }
-.footer i{
-    font-size: 30px;
-    margin-left: 20px;
-}
-.footer nav{
-    margin: 20px 0;
-}
-.footer nav a{
+footer a{
+    color: gray;
+    margin-left: 44px;
+    font-size: 24px;
     text-decoration: none;
-    font-size: 25px;
-    margin-left: 30px;
-    text-transform: capitalize;
-    color: gray;
 }
-/* pvd */
-
-.pvt-ltd{
+.footer-nav{
     text-align: center;
-    background-color: rgb(53, 34, 63);
-    padding: 10px 0;
-    color: gray;
+    padding: 24px 0;
 }
-.pvt-ltd p{
-    color:gray;
-    font-size: 25px;
-}
-small{
-  margin-right: 10px;
+.copy-right-info{
+    text-align: center;
+    background-color: #2d2640;
+    color: white;
+    padding: 32px 0;
+    font-size: 20px;
 }
